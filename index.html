@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="quiz.css" type="text/css" />
     <link rel="stylesheet" href="slider.css" type="text/css">
 </head>
 <body>
@@ -28,48 +29,26 @@
             <h4>ENA JUICE XMAS APP </h4> <br>
             <h4>ΠΟΣΟ CHRISTMAS CHEF ΕΙΣΑΙ</h4> <br>
             <strong><h3>ΕΡΩΤΗΣΕΙΣ</h3></strong>
-            <div class="#">
-                <strong><p>Ποιο από τα παρακάτω αποτελεί βασικό υλικό του Christmas Cake?</p></strong>
-                <ul class="list">
-                    <li>Λαχανικά  - 30 points</li>
-                    <li>Αποξηραμένα φρούτα – 40 points</li>
-                    <li>Κακάο – 20 points</li>
-                    <li>Σοκολάτα – 10 points</li>
-                </ul>
+            
+                <h1 class="score"></h1>
+                <div class="header">
+                    <h1 class="questionNumber"></h1>
+                    <h2 class="question"></h2>
+                </div>
 
-                <strong><p>Τι περιλαμβάνει, συνήθως, η γέμιση της χριστουγεννιάτικης γαλοπούλας?</p></strong>
-                <ul class="list">
-                    <li>Αβοκάντο  - 10 points</li>
-                    <li>Καρότο – 20 points</li>
-                    <li>Χαλεπιανά – 30 points</li>
-                    <li>Σταφίδες – 40 points</li>
-                </ul>
+                <form name="form1">
+                    <div class="answers">
+                        <input type="radio" name="radioChoice"> <label></label><br>
+                        <input type="radio" name="radioChoice"> <label></label><br>
+                        <input type="radio" name="radioChoice"> <label></label><br>
+                        <input type="radio" name="radioChoice"> <label></label><br>
+                        <div class="button"><button type="button" onclick="next()">Next</button></div>
+                        <div class="button"><button type="button" onclick="back()">Back</button></div>
+                    </div>
+                </form>
 
-                <strong><p>Πώς πασπαλίζουμε τα μελομακάρονα?</p></strong>
-                <ul class="list">
-                    <li>Με ζάχαρη άχνη – 30 points</li>
-                    <li>Με μέλι και καρύδια – 40 points</li>
-                    <li>Με γλάσο καραμέλας – 20 points</li>
-                    <li>Με τριμμένο λεμόνι – 10 points</li>
-                </ul>
 
-                <strong><p>Ποιος είναι ο πιο συνηθισμένος τρόπος τοποθέτησης κέρματος στη βασιλόπιτα?</p></strong>
-                <ul class="list">
-                    <li>Το τυλίγουμε σε αλουμινόχαρτο  - 40 points</li>
-                    <li>Το τυλίγουμε σε χαρτοπετσέτα – 30 points</li>
-                    <li>Το τοποθετούμε σε ένα πλαστικό σακουλάκι – 20 points</li>
-                    <li>Το τοποθετούμε χωρίς κάποιο προστατευτικό – 10 points</li>
-                </ul>
-
-                <strong><p>Πώς φτιάχνουμε το κλασικό σιρόπι των περισσότερων γλυκών?</p></strong>
-                <ul class="list">
-                    <li>Με χυμό μήλου – 30 points</li>
-                    <li>Με νερό και ζάχαρη – 40 points</li>
-                    <li>Με τριμμένο πορτοκάλι και κανέλα  - 20 points</li>
-                    <li>Διαλύοντας δύο κύβους ζωμού λαχανικών – 10 points</li>
-                </ul>
-
-                <table class="table-section">
+                <!--<table class="table-section">
                     <strong><p>Answers:</p></strong>
                     <tr>
                         <th width="50%">Persona</th>
@@ -95,7 +74,7 @@
                         <td>Μαγειρική σε άλλο επίπεδο...</td>
                         <td>250-250</td>
                     </tr>
-                </table>
+                </table>-->
             </div>
         </div>
 
@@ -103,6 +82,7 @@
 
     <div id="footer"> </div>
 
+    <script src="script.js"></script>
     <script src="slider.js"> </script>
     <script src="headerAndFooter.js"> </script>
 </body>
